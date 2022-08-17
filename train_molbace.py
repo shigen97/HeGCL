@@ -38,27 +38,6 @@ def make_prediction(x, y, seed=123):
     return accs, f1s
 
 
-# def visual_embedding(x, labels, title=None, seed=123):
-#     x_tsne = TSNE(n_components=2, random_state=seed).fit_transform(x)
-#     plt.scatter(x_tsne[:, 0], x_tsne[:, 1], c=labels, alpha=0.75)
-#     if title is not None:
-#         plt.title(title)
-#     plt.show()
-
-def visual_embedding(x, labels, title=None, seed=123):
-    colors = ['red', 'dodgerblue']
-    alpha = [0.75, 0.75]
-    x_tsne = TSNE(random_state=seed).fit_transform(x)
-    for i in set(labels):
-        idx = labels == i
-        plt.scatter(x_tsne[idx][:, 0], x_tsne[idx][:, 1], s=60, linewidths=0.5,
-                    edgecolors='black', c=colors[i], alpha=alpha[i])
-    if title is not None:
-        plt.title(title)
-    plt.show()
-
-
-
 class Discriminator(nn.Module):
     def __init__(self, n_h1, n_h2):
         super(Discriminator, self).__init__()
