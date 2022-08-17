@@ -410,16 +410,6 @@ parser.add_argument('--num_heads', type=int, default=1,
                     help="the number of SA heads")
 args = parser.parse_args()
 
-# print(args)
-# train(args)
-#
-# paras = {}
-# paras['hidden_feats'] = 128
-# paras['embed_dim'] = 128
-# paras['dropout'] = 0.0
-# paras['lr'] = 1e-3
-# paras['weight_decay'] = 1e-4
-
 print(train_SSL(args))
 
 
