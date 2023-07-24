@@ -1,6 +1,10 @@
 # HeGCL
 Source code for "HeGCL: Advance Self-Supervised Learning in Heterogeneous Graph-level Representation"
 
+You can download the data from the website:
+
+https://drive.google.com/drive/folders/1-7Y7CNzmFsoz7F3uAnJ7rMlTrL_JmsU2?usp=sharing
+
 If you have any problem, please email me with this address imshigen@163.com.
 
 If you make advantage of this paper in your research, please cite the following in your manuscript:
